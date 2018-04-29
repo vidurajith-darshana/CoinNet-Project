@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="438.0" prefWidth="438.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.coinnet.view.PreviewShopController">
+   <children>
+      <ImageView fitHeight="429.0" fitWidth="428.0" layoutX="1.0" layoutY="1.0" opacity="0.09" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/preview.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnBack" buttonType="RAISED" layoutX="382.0" layoutY="408.0" onAction="#btnBackOnAction" prefHeight="27.0" prefWidth="53.0" ripplerFill="WHITE" style="-fx-border-color: black; -fx-background-radius: 10; -fx-border-radius: 10;" styleClass="btn-back" stylesheets="@css/login.css" text="Back" />
+      <Label alignment="CENTER" layoutX="3.0" layoutY="3.0" prefHeight="34.0" prefWidth="135.0" style="-fx-background-color: orange; -fx-background-radius: 10;" text="Customer View">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutX="4.0" layoutY="41.0" prefHeight="364.0" prefWidth="428.0" />
+   </children>
+</AnchorPane>

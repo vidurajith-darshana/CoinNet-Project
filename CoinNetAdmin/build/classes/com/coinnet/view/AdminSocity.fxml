@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="438.0" prefWidth="438.0" style="-fx-background-color: white; -fx-border-color: black;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.coinnet.view.AdminSocityController">
+   <children>
+      <JFXButton fx:id="btnBack" buttonType="RAISED" layoutX="381.0" layoutY="408.0" onAction="#btnBackOnAction" prefHeight="27.0" prefWidth="53.0" ripplerFill="WHITE" style="-fx-border-color: black; -fx-background-radius: 10; -fx-border-radius: 10;" styleClass="btn-back" stylesheets="@css/login-css.css" text="Back" />
+      <TabPane fx:id="tbPne" prefHeight="403.0" prefWidth="438.0" side="LEFT" stylesheets="@css/tabpane-css.css" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab fx:id="tbRegCom">
+               <content>
+                  <AnchorPane fx:id="comRegPane" layoutX="5.0" layoutY="4.0" minHeight="0.0" minWidth="0.0" prefHeight="396.0" prefWidth="347.0" />
+               </content>
+               <graphic>
+                  <ImageView fitHeight="82.0" fitWidth="79.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/admins.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Tab>
+            <Tab fx:id="tbNotify">
+               <content>
+                  <AnchorPane layoutX="5.0" layoutY="4.0" minHeight="0.0" minWidth="0.0" prefHeight="396.0" prefWidth="347.0">
+                     <children>
+                        <ScrollPane fx:id="notificationPane" layoutX="5.0" layoutY="4.0" prefHeight="397.0" prefWidth="347.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+               <graphic>
+                  <ImageView fitHeight="101.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/message_1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Tab>
+            <Tab fx:id="tbWorld">
+               <content>
+                  <AnchorPane layoutX="5.0" layoutY="4.0" minHeight="0.0" minWidth="0.0" prefHeight="396.0" prefWidth="347.0">
+                     <children>
+                        <ScrollPane fx:id="worldPane" layoutX="5.0" layoutY="4.0" prefHeight="397.0" prefWidth="348.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+               <graphic>
+                  <ImageView fitHeight="136.0" fitWidth="83.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/notification.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Tab>
+            <Tab fx:id="tbCom">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ScrollPane fx:id="chatCompaniesPane" layoutX="4.0" layoutY="5.0" prefHeight="395.0" prefWidth="120.0" />
+                        <ScrollPane fx:id="companyChatPane" layoutX="132.0" layoutY="6.0" prefHeight="393.0" prefWidth="221.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+               <graphic>
+                  <ImageView fitHeight="80.0" fitWidth="84.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../assets/world.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Tab>
+         </tabs>
+      </TabPane>
+      <ImageView fitHeight="33.0" fitWidth="26.0" layoutX="54.0" layoutY="405.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/message.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblMessages" layoutX="74.0" layoutY="407.0" prefHeight="20.0" prefWidth="20.0" style="-fx-background-color: red; -fx-background-radius: 40;" text="121" textFill="WHITE" />
+      <ImageView fitHeight="27.0" fitWidth="26.0" layoutX="8.0" layoutY="407.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/notification.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblNotification" layoutX="28.0" layoutY="407.0" prefHeight="20.0" prefWidth="20.0" style="-fx-background-color: red; -fx-background-radius: 40;" text="121" textFill="WHITE" />
+   </children>
+</AnchorPane>

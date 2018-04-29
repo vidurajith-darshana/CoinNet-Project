@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="438.0" prefWidth="438.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.coinnet.view.ShoppingDetailController">
+   <children>
+      <ImageView fitHeight="383.0" fitWidth="428.0" layoutX="6.0" layoutY="21.0" opacity="0.12" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/shopping.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="381.0" layoutY="408.0" onAction="#btnBackOnAction" prefHeight="27.0" prefWidth="53.0" ripplerFill="WHITE" style="-fx-border-color: black; -fx-background-radius: 10; -fx-border-radius: 10;" styleClass="btn-back" stylesheets="@css/login-css.css" text="Back" />
+      <JFXDatePicker layoutX="5.0" layoutY="6.0" prefHeight="28.0" prefWidth="131.0" promptText="select From Date" />
+      <ScrollPane layoutX="5.0" layoutY="47.0" opacity="0.72" prefHeight="129.0" prefWidth="428.0" style="-fx-background-color: black; -fx-background-radius: 5;" />
+      <Label alignment="CENTER" layoutX="300.0" layoutY="10.0" prefHeight="27.0" prefWidth="131.0" style="-fx-background-color: purple; -fx-background-radius: 5;" text="Select Shopping Center" textFill="WHITE" />
+      <JFXDatePicker layoutX="154.0" layoutY="7.0" prefHeight="28.0" prefWidth="131.0" promptText="select To Date" />
+      <Label alignment="CENTER" layoutX="160.0" layoutY="180.0" prefHeight="27.0" prefWidth="131.0" style="-fx-background-color: blue; -fx-background-radius: 5;" text="Shopping Cart" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutX="5.0" layoutY="213.0" opacity="0.72" prefHeight="188.0" prefWidth="428.0" style="-fx-background-color: black; -fx-background-radius: 5;" />
+   </children>
+</AnchorPane>

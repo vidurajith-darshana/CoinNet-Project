@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="438.0" prefWidth="438.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.coinnet.view.BankTransactionController">
+   <children>
+      <ImageView fitHeight="385.0" fitWidth="406.0" layoutX="20.0" layoutY="23.0" opacity="0.39" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Transaction.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="381.0" layoutY="408.0" onAction="#btnBackOnAction" prefHeight="27.0" prefWidth="53.0" ripplerFill="WHITE" style="-fx-border-color: black; -fx-background-radius: 10; -fx-border-radius: 10;" styleClass="btn-back" stylesheets="@css/login-css.css" text="Back" />
+      <JFXDatePicker layoutX="5.0" layoutY="4.0" prefHeight="28.0" prefWidth="131.0" promptText="select From Date" />
+      <ScrollPane layoutX="5.0" layoutY="45.0" opacity="0.72" prefHeight="129.0" prefWidth="428.0" style="-fx-background-color: black; -fx-background-radius: 5;" />
+      <Label alignment="CENTER" layoutX="316.0" layoutY="8.0" prefHeight="27.0" prefWidth="115.0" style="-fx-background-color: green; -fx-background-radius: 5;" text="Select Bank" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXDatePicker layoutX="154.0" layoutY="5.0" prefHeight="28.0" prefWidth="131.0" promptText="select To Date" />
+      <ScrollPane layoutX="6.0" layoutY="214.0" opacity="0.72" prefHeight="189.0" prefWidth="200.0" style="-fx-background-color: black; -fx-background-radius: 5;" />
+      <Label alignment="CENTER" layoutX="6.0" layoutY="180.0" prefHeight="27.0" prefWidth="200.0" style="-fx-background-color: blue; -fx-background-radius: 5;" text="Deposite" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutX="231.0" layoutY="214.0" opacity="0.72" prefHeight="189.0" prefWidth="200.0" style="-fx-background-color: black; -fx-background-radius: 5;" />
+      <Label alignment="CENTER" layoutX="231.0" layoutY="180.0" prefHeight="27.0" prefWidth="200.0" style="-fx-background-color: blue; -fx-background-radius: 5;" text="WithDraw" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

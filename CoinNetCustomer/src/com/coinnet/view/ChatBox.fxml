@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="chatPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="96.0" prefWidth="160.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.coinnet.view.ChatBoxController">
+   <children>
+      <AnchorPane fx:id="msgPane" layoutX="23.0" layoutY="32.0" prefHeight="62.0" prefWidth="135.0" style="-fx-background-color: gray; -fx-background-radius: 10;">
+         <children>
+            <JFXTextArea fx:id="msgArea" focusColor="GREY" layoutX="6.0" layoutY="12.0" prefHeight="26.0" prefWidth="123.0" style="-fx-text-fill: white;" unFocusColor="GREY">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXTextArea>
+         </children>
+      </AnchorPane>
+      <Circle fx:id="imgCircle" fill="WHITE" layoutX="23.0" layoutY="23.0" radius="22.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label fx:id="lblTime" layoutX="80.0" layoutY="1.0" prefHeight="26.0" prefWidth="77.0" textFill="#8a8888" />
+   </children>
+</AnchorPane>

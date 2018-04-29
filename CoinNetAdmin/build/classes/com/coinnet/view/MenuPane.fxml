@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="438.0" prefWidth="438.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.coinnet.view.MenuPaneController">
+   <children>
+      <JFXButton fx:id="btnTicket" buttonType="RAISED" layoutX="168.0" layoutY="33.0" onAction="#ticketServiceOnAction" prefHeight="38.0" prefWidth="257.0" ripplerFill="BLACK" style="-fx-background-color: white; -fx-background-radius: 10;" styleClass="btn-menu" stylesheets="@css/login-css.css" text="Ticket Service" textFill="#1f5bff">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnCust" buttonType="RAISED" layoutX="168.0" layoutY="99.0" onAction="#customerServiceOnAction" prefHeight="38.0" prefWidth="257.0" ripplerFill="BLACK" style="-fx-background-color: white; -fx-background-radius: 10;" styleClass="btn-menu" stylesheets="@css/login-css.css" text="Customer Service" textFill="#1f5bff">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnAdmin" buttonType="RAISED" layoutX="168.0" layoutY="164.0" onAction="#adminSocityOnAction" prefHeight="38.0" prefWidth="257.0" ripplerFill="BLACK" style="-fx-background-color: white; -fx-background-radius: 10;" styleClass="btn-menu" stylesheets="@css/login-css.css" text="Admin Socity" textFill="#1f5bff">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnShoping" buttonType="RAISED" layoutX="168.0" layoutY="228.0" onAction="#shoppingWorldOnAction" prefHeight="38.0" prefWidth="257.0" ripplerFill="BLACK" style="-fx-background-color: white; -fx-background-radius: 10;" styleClass="btn-menu" stylesheets="@css/login-css.css" text="Shopping World" textFill="#1f5bff">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnBank" buttonType="RAISED" layoutX="168.0" layoutY="295.0" onAction="#bankTransactionOnAction" prefHeight="38.0" prefWidth="257.0" ripplerFill="BLACK" style="-fx-background-color: white; -fx-background-radius: 10;" styleClass="btn-menu" stylesheets="@css/login-css.css" text="Bank Transactions" textFill="#1f5bff">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnShopingDetail" buttonType="RAISED" layoutX="168.0" layoutY="362.0" onAction="#shoppingDetailOnAction" prefHeight="38.0" prefWidth="257.0" ripplerFill="BLACK" style="-fx-background-color: white; -fx-background-radius: 10;" styleClass="btn-menu" stylesheets="@css/login-css.css" text="Shopping Details" textFill="#1f5bff">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXButton>
+      <ImageView fx:id="imgTicket" fitHeight="64.0" fitWidth="79.0" layoutX="53.0" layoutY="20.0" pickOnBounds="true" />
+      <ImageView fx:id="imgCust" fitHeight="64.0" fitWidth="89.0" layoutX="48.0" layoutY="82.0" pickOnBounds="true" />
+      <ImageView fx:id="imgAdmin" fitHeight="71.0" fitWidth="89.0" layoutX="48.0" layoutY="147.0" pickOnBounds="true" />
+      <ImageView fx:id="imgShopping" fitHeight="79.0" fitWidth="89.0" layoutX="43.0" layoutY="217.0" pickOnBounds="true" />
+      <ImageView fx:id="imgTransaction" fitHeight="71.0" fitWidth="89.0" layoutX="48.0" layoutY="284.0" pickOnBounds="true" />
+      <ImageView fx:id="imgDetail" fitHeight="55.0" fitWidth="69.0" layoutX="58.0" layoutY="360.0" pickOnBounds="true" />
+   </children>
+</AnchorPane>

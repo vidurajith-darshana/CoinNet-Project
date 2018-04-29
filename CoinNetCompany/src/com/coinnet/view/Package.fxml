@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="438.0" prefWidth="438.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.coinnet.view.PackageController">
+   <children>
+      <JFXTabPane fx:id="tbPane" prefHeight="438.0" prefWidth="438.0">
+         <tabs>
+            <Tab fx:id="tbBuy" style="-fx-background-color: black; -fx-border-color: white; -fx-color: orange;" text="Advertiesment Package">
+               <content>
+                  <AnchorPane fx:id="adPane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+               </content>
+            </Tab>
+            <Tab fx:id="tbAdd" style="-fx-background-color: black; -fx-border-color: white;" text="Season Package">
+               <content>
+                  <AnchorPane fx:id="seasonPane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+               </content>
+            </Tab>
+            <Tab fx:id="tbManage" style="-fx-background-color: black; -fx-border-color: white;" text="Manage Goods">
+               <content>
+                  <AnchorPane fx:id="managePane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+               </content>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
+   </children>
+</AnchorPane>

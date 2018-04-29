@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="438.0" prefWidth="438.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.coinnet.view.ProcessController">
+   <children>
+      <JFXTabPane fx:id="tbPane" prefHeight="438.0" prefWidth="438.0">
+         <tabs>
+            <Tab fx:id="tbBuy" style="-fx-background-color: black; -fx-border-color: white; -fx-color: orange;" text="Buy New Goods">
+              <content>
+                <AnchorPane fx:id="buyPane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+            <Tab fx:id="tbAdd" style="-fx-background-color: black; -fx-border-color: white;" text="Add Goods To Shop">
+              <content>
+                <AnchorPane fx:id="addPane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+            <Tab fx:id="tbManage" style="-fx-background-color: black; -fx-border-color: white;" text="Manage Goods">
+              <content>
+                <AnchorPane fx:id="managePane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+            <Tab fx:id="tbGraph" style="-fx-background-color: black; -fx-border-color: white;" text="Daily Graph">
+              <content>
+                <AnchorPane fx:id="graphPane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
+   </children>
+</AnchorPane>

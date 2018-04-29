@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="mainPane" prefHeight="603.0" prefWidth="771.0" style="-fx-background-color: white; -fx-border-color: blue;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.coinnet.view.DashBoardController">
+   <children>
+      <JFXDrawer fx:id="ecnmyDrwr" defaultDrawerSize="414.0" layoutX="1.0" layoutY="204.0" prefHeight="271.0" prefWidth="164.0" />
+      <Label fx:id="lblName" alignment="CENTER" layoutX="166.0" layoutY="2.0" prefHeight="34.0" prefWidth="438.0" style="-fx-background-color: brown; -fx-background-radius: 5px;" text="Menu" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <JFXDrawer fx:id="mdiumDrwr" defaultDrawerSize="414.0" direction="RIGHT" layoutX="607.0" layoutY="61.0" prefHeight="414.0" prefWidth="164.0" />
+      <JFXButton prefHeight="38.0" prefWidth="40.0" />
+      <JFXDrawer fx:id="premiumDrwr" defaultDrawerSize="771.0" direction="RIGHT" layoutX="1.0" layoutY="478.0" prefHeight="126.0" prefWidth="771.0" />
+      <AnchorPane fx:id="containPane" layoutX="166.0" layoutY="37.0" prefHeight="438.0" prefWidth="438.0" style="-fx-border-color: black;" />
+      <JFXButton fx:id="btnClose" buttonType="RAISED" layoutX="716.0" layoutY="4.0" onAction="#closeBtnOnAction" prefHeight="38.0" prefWidth="40.0" ripplerFill="BLACK" style="-fx-background-color: white; -fx-background-radius: 80;" styleClass="btn-close" stylesheets="@css/login-css.css" text="X">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnMnmz" buttonType="RAISED" layoutX="655.0" layoutY="4.0" onAction="#minimizeBtnOnAction" prefHeight="38.0" prefWidth="40.0" ripplerFill="BLACK" style="-fx-background-color: white; -fx-background-radius: 80;" styleClass="btn-close" stylesheets="@css/login-css.css" text="-">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXButton>
+      <Circle fx:id="imgCircle" fill="WHITE" layoutX="43.0" layoutY="41.0" radius="39.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="1.0" layoutY="130.0" prefHeight="21.0" prefWidth="87.0" text="Membership ID" />
+      <Label fx:id="lblCid" layoutX="93.0" layoutY="130.0" prefHeight="21.0" prefWidth="57.0" text="34" />
+      <Separator layoutX="85.0" layoutY="125.0" orientation="VERTICAL" prefHeight="68.0" prefWidth="2.0" />
+      <Label fx:id="lblCustName" layoutX="1.0" layoutY="82.0" prefHeight="21.0" prefWidth="164.0" text="Vidurajith Darshana">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="1.0" layoutY="164.0" prefHeight="21.0" prefWidth="103.0" text="Coins" />
+      <Label fx:id="lblCoin" layoutX="93.0" layoutY="164.0" prefHeight="21.0" prefWidth="57.0" text="238876" />
+      <Label fx:id="lblSignal" layoutX="64.0" layoutY="8.0" prefHeight="14.0" prefWidth="14.0" style="-fx-background-color: lime; -fx-background-radius: 80;">
+         <font>
+            <Font size="5.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" layoutX="172.0" layoutY="8.0" prefHeight="21.0" prefWidth="87.0" textFill="WHITE" />
+      <Label fx:id="lblTime" layoutX="552.0" layoutY="9.0" prefHeight="21.0" prefWidth="47.0" textFill="WHITE" />
+   </children>
+</AnchorPane>

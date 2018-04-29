@@ -1,0 +1,64 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 24, 2017, 1:04:10 PM
+    Author     : Vidurajith
+*/
+
+.btn-close{
+    
+}
+
+.btn-close:hover{
+    -fx-text-fill: red;
+    -fx-cursor: hand
+    
+}
+
+.btn-menu{
+    
+}
+
+.btn-menu:hover{
+    
+    -fx-text-fill: orange;
+    -fx-cursor: hand
+}
+.btn-back{
+    
+}
+.btn-back:hover{
+    -fx-background-color:black;
+    -fx-text-fill:white;
+    -fx-border-radius:10px;
+    -fx-background-radius:10px
+}
+.btn-pay{
+    
+}
+.btn-pay:hover{
+    -fx-background-color: green;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-cursor: hand;
+}
+.btn-cancel{
+    
+}
+.btn-cancel:hover{
+    -fx-background-color: black;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-cursor: hand;
+}
+
+.btn-choose-plan{
+    
+}
+
+.btn-choose-plan:hover{
+    -fx-cursor: hand;
+}
